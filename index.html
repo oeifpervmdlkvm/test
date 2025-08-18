@@ -2,16 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MP3 Player</title>
+    <title>My Music Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 30px 0;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        main {
+            padding: 50px 20px;
+        }
+
+        .player-container {
+            background-color: #fff;
+            border: 2px solid #ccc;
+            padding: 20px;
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        audio {
+            width: 300px;
+        }
+    </style>
 </head>
 <body>
-    <h1>My Music Player</h1>
-    
-    <!-- Audio player -->
-    <audio controls>
-        <source src="howweloveaudio.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+
+    <header>
+        <h1>My Music Player</h1>
+    </header>
+
+    <main>
+        <div class="player-container">
+            <h2>Now Playing:</h2>
+            <p>My Song.mp3</p>
+            <audio controls>
+                <source src="howweloveaudio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </div>
+    </main>
+
 </body>
 </html>
-
